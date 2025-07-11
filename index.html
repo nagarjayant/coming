@@ -1,68 +1,44 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <title>Coming Soon</title>
-    <meta name="google" content="notranslate" />
-    <meta name="description" content="Mystery unsolving soon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <style>
-      *,
-      *::before,
-      *::after {
-        box-sizing: border-box;
-        margin: 0;
-        outline: 0 none;
-        padding: 0;
-      }
-
-      *:focus {
-        outline: 0;
-      }
-
-      a {
-        text-decoration: none;
-        outline: none;
-      }
-
-      img {
-        display: inline-block;
-        height: auto;
-        vertical-align: middle;
-      }
-
-      img,
-      iframe {
-        border: 0 none;
-      }
-
-      body {
-        margin: 0 !important;
-        padding: 0 !important;
-        background: #180d33 !important;
-        letter-spacing: 0.25 !important;
-        line-height: 1.6 !important;
-        overflow-x: hidden !important;
-      }
-
-      .heroSection {
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .heroSection img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <title>Space Identifier & Removal</title>
+    <link rel="stylesheet" href="css/base.css" />
   </head>
-
   <body>
-    <div class="heroSection">
-      <img src="images/comingsoon.gif" />
+    <header>
+      <div class="center-area">
+        <div class="headerLogo">
+          <img src="https://nagarjayant.github.io/white-space/images/ibm_logo.svg" alt="Logo" />
+        </div>
+        <div class="headerText">DMO Space Identifier & Removal</div>
+      </div>
+    </header>
+    <div class="center-area">
+      <div class="selectedSpaces">
+        <span id="selectedCount"></span>
+        <button class="remButton">Remove selected</button>
+      </div>
+      <div class="flexDiv">
+        <div class="column">
+          <textarea id="inputArea" placeholder="Paste/Type HTML Code here..."></textarea>
+        </div>
+        <div class="column">
+          <div id="outputArea">
+            <span class="outputText">Cleaned code output</span>
+          </div>
+
+          <button class="copyContent">
+            <img src="https://nagarjayant.github.io/white-space/images/copyContent.png" />
+            <span class="tooltip-text">Copy</span>
+          </button>
+          <div id="alertBox">Content Copied!</div>
+        </div>
+      </div>
     </div>
+    <footer>
+      <img src="https://nagarjayant.github.io/white-space/images/ibm-logo-white.png" alt="Logo" />
+    </footer>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
